@@ -6,7 +6,7 @@ This repository hosts the code for our paper:
 
 [Bongard-OpenWorld: Few-Shot Reasoning for Free-form Visual Concepts in the Real World](https://arxiv.org/pdf/2310.10207.pdf)
 
-by [Rujie Wu*](https://joyjayng.github.io/), [Xiaojian Ma*](https://jeasinema.github.io/), [Qing Li](https://liqing-ustc.github.io/), [Wei Wang](https://cognn.com/), [Zhenliang Zhang](https://www.zlz.link/), [Song-Chun Zhu](https://zhusongchun.net/), [Yizhou Wang](https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm)
+by [Rujie Wu*](https://joyjayng.github.io/), [Xiaojian Ma*](https://jeasinema.github.io/), [Zhenliang Zhang](https://www.zlz.link/), [Wei Wang](https://cognn.com/), [Qing Li](https://liqing-ustc.github.io/), [Song-Chun Zhu](https://zhusongchun.net/), [Yizhou Wang](https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm)
 
 [🔥 Leaderboard and submission guide!](assets/benchmarking_leaderboard.md) | [arXiv](https://arxiv.org/abs/2310.10207) | [Paper](https://arxiv.org/pdf/2310.10207.pdf) | [Project page](https://joyjayng.github.io/Bongard-OpenWorld.github.io/) | [Dataset](https://huggingface.co/datasets/joyjay/Bongard-OpenWorld)
 
@@ -121,10 +121,10 @@ Thanks for the codebase of [OpenFlamingo](https://github.com/mlfoundations/open_
 ## Citation
 If you find Bongard-OpenWorld helpful for your research, please consider citing our paper.
 ```bibtex
-@misc{wu2023bongardopenworld,
+@misc@misc{wu2024bongardopenworld,
       title={Bongard-OpenWorld: Few-Shot Reasoning for Free-form Visual Concepts in the Real World}, 
-      author={Rujie Wu and Xiaojian Ma and Qing Li and Wei Wang and Zhenliang Zhang and Song-Chun Zhu and Yizhou Wang},
-      year={2023},
+      author={Rujie Wu and Xiaojian Ma and Zhenliang Zhang and Wei Wang and Qing Li and Song-Chun Zhu and Yizhou Wang},
+      year={2024},
       eprint={2310.10207},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
