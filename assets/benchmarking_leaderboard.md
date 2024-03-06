@@ -6,7 +6,7 @@ This hosts the benchmarking instructions and [leaderboard](https://paperswithcod
 
 ## Guide
 
-Please send your result to [Rujie Wu](joyjayng@gmail.com) with the following information:
+Please send your result to [Rujie Wu](https://joyjayng.github.io/) with the following information:
 
 1. The **name** of your model (or team).
 
