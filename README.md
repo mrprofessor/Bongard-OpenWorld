@@ -6,15 +6,15 @@ This repository hosts the code for our paper:
 
 [Bongard-OpenWorld: Few-Shot Reasoning for Free-form Visual Concepts in the Real World](https://arxiv.org/pdf/2310.10207.pdf)
 
-by [Rujie Wu*](https://joyjayng.github.io/), [Xiaojian Ma*](https://jeasinema.github.io/), [Zhenliang Zhang](https://www.zlz.link/), [Wei Wang](https://cognn.com/), [Qing Li](https://liqing-ustc.github.io/), [Song-Chun Zhu](https://zhusongchun.net/), [Yizhou Wang](https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm)
+by [Rujie Wu*](https://rujiewu.github.io/), [Xiaojian Ma*](https://jeasinema.github.io/), [Zhenliang Zhang](https://www.zlz.link/), [Wei Wang](https://cognn.com/), [Qing Li](https://liqing-ustc.github.io/), [Song-Chun Zhu](https://zhusongchun.net/), [Yizhou Wang](https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm)
 
-[🔥 Leaderboard and submission guide!](assets/benchmarking_leaderboard.md) | [arXiv](https://arxiv.org/abs/2310.10207) | [Paper](https://arxiv.org/pdf/2310.10207.pdf) | [Project page](https://joyjayng.github.io/Bongard-OpenWorld.github.io/) | [Dataset](https://huggingface.co/datasets/joyjay/Bongard-OpenWorld)
+[🔥 Leaderboard and submission guide!](assets/benchmarking_leaderboard.md) | [arXiv](https://arxiv.org/abs/2310.10207) | [Paper](https://arxiv.org/pdf/2310.10207.pdf) | [Project page](https://rujiewu.github.io/Bongard-OpenWorld.github.io/) | [Dataset](https://huggingface.co/datasets/rujiewu/Bongard-OpenWorld)
 
 ## News
 - 01/16/2024: 🎉🎉 Our paper has been accepted to [ICLR 2024](https://openreview.net/forum?id=hWS4MueyzC).
 - 10/20/2023: 🎉🎉 [Leaderboard](https://paperswithcode.com/sota/visual-reasoning-on-bongard-openworld) has been launched.
-- 10/20/2023: 🎉🎉 [Code](https://github.com/joyjayng/Bongard-OpenWorld) and [Dataset](https://huggingface.co/datasets/joyjay/Bongard-OpenWorld) have been released.
-- 10/18/2023: 🎉🎉 Official [Project Page](https://joyjayng.github.io/Bongard-OpenWorld.github.io/) has been launched.
+- 10/20/2023: 🎉🎉 [Code](https://github.com/rujiewu/Bongard-OpenWorld) and [Dataset](https://huggingface.co/datasets/rujiewu/Bongard-OpenWorld) have been released.
+- 10/18/2023: 🎉🎉 Official [Project Page](https://rujiewu.github.io/Bongard-OpenWorld.github.io/) has been launched.
 - 10/16/2023: 🎉🎉 [ArXiv](https://arxiv.org/abs/2310.10207) preprint has been submitted.
 
 ## Abstract
