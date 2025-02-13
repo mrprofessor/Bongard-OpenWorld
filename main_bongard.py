@@ -11,6 +11,13 @@ import datasets
 import models
 import wandb
 
+import torch
+import gc
+
+
+torch.backends.cuda.matmul.allow_tf32 = True
+torch.backends.cudnn.benchmark = True
+
 logger = logging.getLogger(__name__)
 
 
@@ -27,6 +34,7 @@ class BongardCallback(Callback):
             self.pix_std = (0.229, 0.224, 0.225)
 
     def on_train_epoch_end(self, trainer, pl_module):
+        clear_gpu_memory()
         pl_module.log('acc/train_bongard_acc',
                       pl_module.train_acc.avg, sync_dist=True)
         pl_module.log('acc/train_bongard_acc_concept_2',
@@ -54,6 +62,7 @@ class BongardCallback(Callback):
         pl_module.train_acc_non_commonsense.reset()
 
     def on_validation_epoch_end(self, trainer, pl_module):
+        clear_gpu_memory()
         pl_module.log('acc/val_bongard_acc',
                       pl_module.val_acc.avg, sync_dist=True)
         pl_module.log('acc/val_bongard_acc_concept_2',
@@ -86,6 +95,7 @@ class BongardCallback(Callback):
         pl_module.viz_caption_buffer = []
 
     def on_test_epoch_end(self, trainer, pl_module):
+        clear_gpu_memory()
         logging.info('Test end!')
         pl_module.log('acc/test_bongard_acc',
                       pl_module.test_acc.avg, sync_dist=True)
@@ -122,6 +132,10 @@ class BongardCallback(Callback):
 
 @hydra.main(version_base=None, config_path='configs', config_name='bongard')
 def main(cfg):
+    # Clear gpu memory
+    clear_gpu_memory()
+
+
     logging.basicConfig(level=logging.INFO)
     logger.info('Config: %s', cfg)
     seed_everything(cfg.seed, workers=True)
@@ -148,6 +162,7 @@ def main(cfg):
         strategy=cfg.strategy,
         callbacks=callbacks,
         log_every_n_steps=10,
+        accumulate_grad_batches=1,
         **kwargs,
     )
 
@@ -209,6 +224,10 @@ def main(cfg):
     logger.info('Test start!')
     logger.info('Testing with the best model ' + checkpoint_callback.best_model_path)
     trainer.test(model, dataloaders=test_loader, ckpt_path=checkpoint_callback.best_model_path)
+
+def clear_gpu_memory():
+    gc.collect()
+    torch.cuda.empty_cache()
 
 if __name__ == '__main__':
     main()
