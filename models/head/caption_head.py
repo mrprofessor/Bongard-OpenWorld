@@ -165,7 +165,8 @@ class GPT2Captioner(nn.Module):
                 [self.soft_prompt.repeat(B, 1, 1), input_embs], dim=1)
         output = self.lm.generate(
             inputs_embeds=input_embs,
-            generation_config=self.generation_config
+            generation_config=self.generation_config,
+            max_new_tokens=self.generation_config.max_length  # Claude
         )
         if return_text:
             ret = []
